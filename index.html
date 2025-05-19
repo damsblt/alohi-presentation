@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alohi Marketing & Communications Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Vertical Navigation -->
+        <nav class="vertical-nav">
+            <div class="nav-content">
+                <div class="logo"><img src="logo.gif" alt="Alohi Logo" class="logo-img"></div>
+                <div class="nav-links">
+                    <a href="#section1" class="nav-link">
+                        <span class="nav-number">01</span>
+                        <span class="nav-text">Overview</span>
+                    </a>
+                    <a href="#section3" class="nav-link">
+                        <span class="nav-number">03</span>
+                        <span class="nav-text">Markets</span>
+                    </a>
+                    <a href="#section4" class="nav-link">
+                        <span class="nav-number">04</span>
+                        <span class="nav-text">Digital</span>
+                    </a>
+                    <a href="#section5" class="nav-link">
+                        <span class="nav-number">05</span>
+                        <span class="nav-text">Non-Digital</span>
+                    </a>
+                    <a href="#section6" class="nav-link">
+                        <span class="nav-number">06</span>
+                        <span class="nav-text">Budget</span>
+                    </a>
+                    <a href="#section7" class="nav-link">
+                        <span class="nav-number">07</span>
+                        <span class="nav-text">Timeline</span>
+                    </a>
+                    <a href="#section8" class="nav-link">
+                        <span class="nav-number">08</span>
+                        <span class="nav-text">KPIs</span>
+                    </a>
+                    <a href="#section9" class="nav-link">
+                        <span class="nav-number">09</span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-line"></div>
+            <div class="progress-dots">
+                <div class="progress-dot" data-section="section1"></div>
+                <div class="progress-dot" data-section="section3"></div>
+                <div class="progress-dot" data-section="section4"></div>
+                <div class="progress-dot" data-section="section5"></div>
+                <div class="progress-dot" data-section="section6"></div>
+                <div class="progress-dot" data-section="section7"></div>
+                <div class="progress-dot" data-section="section8"></div>
+                <div class="progress-dot" data-section="section9"></div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="section1" class="section">
+                <div class="section-content">
+                    <h1>Alohi Marketing & Communications Plan</h1>
+                    <p class="subtitle">One-Year Strategic Overview</p>
+                    <button class="expand-btn" onclick="toggleIframe('section1-iframe')">
+                        <span>Learn More</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="section1-iframe" class="iframe-container" style="display:none;">
+                        <iframe src="overview-details.html" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                    <div id="section1-content" class="expanded-content">
+                        <div class="content-grid">
+                            <div class="content-card">
+                                <h3>Objectives</h3>
+                                <ul>
+                                    <li>Unify brand identity</li>
+                                    <li>Drive 25% user growth</li>
+                                    <li>Increase enterprise adoption</li>
+                                </ul>
+                            </div>
+                            <div class="content-card">
+                                <h3>Key Focus</h3>
+                                <ul>
+                                    <li>Security & compliance</li>
+                                    <li>Seamless integrations</li>
+                                    <li>Productivity solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="section">
+                <div class="section-content">
+                    <h2>Target Markets</h2>
+                    <div class="iframe-container" style="margin-top:2rem;">
+                        <iframe src="market-details.html" frameborder="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section4" class="section">
+                <div class="section-content">
+                    <h2>Digital</h2>
+                    <div class="content-grid digital-grid">
+                        <div class="content-card digital-card">
+                            <h3>SEO & Content Marketing</h3>
+                            <ul>
+                                <li>Content marketing & SEO</li>
+                                <li>Blog, guides, whitepapers</li>
+                                <li>24 posts/year, multilingual</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('seo-content.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="content-card digital-card">
+                            <h3>Paid Search & Online Advertising</h3>
+                            <ul>
+                                <li>PPC campaigns</li>
+                                <li>Google/Bing, LinkedIn Ads</li>
+                                <li>Retargeting, geotargeting</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('paid-search.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="content-card digital-card">
+                            <h3>Social Media & Community Engagement</h3>
+                            <ul>
+                                <li>LinkedIn, Twitter/X</li>
+                                <li>Community engagement</li>
+                                <li>Reviews, user stories</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('social-media.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="content-card digital-card">
+                            <h3>Email Marketing & Automation</h3>
+                            <ul>
+                                <li>Email nurturing</li>
+                                <li>Automation & segmentation</li>
+                                <li>Newsletters, drip campaigns</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('email-marketing.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section5" class="section">
+                <div class="section-content">
+                    <h2>Non-Digital Initiatives</h2>
+                    <div class="content-grid non-digital-grid">
+                        <div class="content-card digital-card">
+                            <h3>PR & Thought Leadership</h3>
+                            <ul>
+                                <li>Press releases & media outreach</li>
+                                <li>Milestones, awards, speaking</li>
+                                <li>Quarterly PR activities</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('pr-thought-leadership.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="content-card digital-card">
+                            <h3>Events & Webinars</h3>
+                            <ul>
+                                <li>Industry events & trade shows</li>
+                                <li>Quarterly webinars</li>
+                                <li>Lead generation & engagement</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('events-webinars.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="content-card digital-card">
+                            <h3>Partnerships & Integrations</h3>
+                            <ul>
+                                <li>Tech integrations (Google, Slack, etc.)</li>
+                                <li>Affiliate & referral program</li>
+                                <li>Strategic partnerships</li>
+                            </ul>
+                            <button class="expand-btn" onclick="openFullscreenIframe('partnerships-integrations.html')">
+                                <span>Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section6" class="section">
+                <div class="section-content">
+                    <h2>Budget Allocation</h2>
+                    <button class="expand-btn" onclick="toggleContent('section6-content')">
+                        <span>View Budget</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="section6-content" class="expanded-content">
+                        <div class="content-grid">
+                            <div class="content-card">
+                                <h3>Total Budget: CHF 100,000</h3>
+                                <div class="budget-chart">
+                                    <div class="budget-item">
+                                        <span>SEO & Content</span>
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>Paid Search</span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>Social Media</span>
+                                        <span>5%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>Email Marketing</span>
+                                        <span>5%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>PR</span>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>Events</span>
+                                        <span>15%</span>
+                                    </div>
+                                    <div class="budget-item">
+                                        <span>Partnerships</span>
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section7" class="section">
+                <div class="section-content">
+                    <h2>Timeline & Milestones</h2>
+                    <div class="timeline-bar">
+                        <div class="timeline-dot" onclick="expandTimelineIframe('timeline-q1.html', this)">
+                            <span class="dot"></span>
+                            <span class="timeline-title">Q1 - Foundation</span>
+                        </div>
+                        <div class="timeline-dot" onclick="expandTimelineIframe('timeline-q2.html', this)">
+                            <span class="dot"></span>
+                            <span class="timeline-title">Q2 - Acceleration</span>
+                        </div>
+                        <div class="timeline-dot" onclick="expandTimelineIframe('timeline-q3.html', this)">
+                            <span class="dot"></span>
+                            <span class="timeline-title">Q3 - Expansion</span>
+                        </div>
+                        <div class="timeline-dot" onclick="expandTimelineIframe('timeline-q4.html', this)">
+                            <span class="dot"></span>
+                            <span class="timeline-title">Q4 - Optimization</span>
+                        </div>
+                    </div>
+                    <div id="timeline-iframe-container" class="iframe-container timeline-iframe-container" style="display:none; margin-top:2rem;"></div>
+                </div>
+            </section>
+
+            <section id="section8" class="section">
+                <div class="section-content">
+                    <h2>KPIs & Success Metrics</h2>
+                    <button class="expand-btn" onclick="toggleContent('section8-content')">
+                        <span>View KPIs</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="section8-content" class="expanded-content">
+                        <div class="content-grid">
+                            <div class="content-card">
+                                <h3>Growth Metrics</h3>
+                                <ul>
+                                    <li>25% user growth</li>
+                                    <li>40% website traffic increase</li>
+                                    <li>20% conversion rate improvement</li>
+                                </ul>
+                            </div>
+                            <div class="content-card">
+                                <h3>Engagement Metrics</h3>
+                                <ul>
+                                    <li>Email open rate > 25%</li>
+                                    <li>Social engagement > 5%</li>
+                                    <li>Webinar attendance > 100</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section9" class="section">
+                <div class="section-content">
+                    <h2>Contact & Next Steps</h2>
+                    <button class="expand-btn" onclick="toggleContent('section9-content')">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="section9-content" class="expanded-content">
+                        <div class="content-grid single-card-center">
+                            <div class="content-card contact-centered">
+                                <img src="profile.jpg" alt="Damien Balet profile picture" class="profile-pic" />
+                                <p class="contact-email">damien.balet@me.com</p>
+                                <p class="contact-phone">+4179 520 08 85</p>
+                                <div class="social-links" style="justify-content: center;">
+                                    <a href="https://www.linkedin.com/in/damienbalet/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-control prev" title="Previous Section">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            <button class="nav-control next" title="Next Section">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fullscreen Iframe Modal for Digital Details -->
+    <div id="fullscreen-iframe-modal" class="fullscreen-iframe-modal" style="display:none;">
+        <div class="modal-backdrop" onclick="closeFullscreenIframe()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeFullscreenIframe()" title="Close">&times;</button>
+            <iframe id="fullscreen-iframe" src="" frameborder="0" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
